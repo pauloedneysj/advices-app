@@ -2,8 +2,8 @@
 
 React Native app thats make some random advices about everything. This app contains some libraries that are axios, react-query and styled-components and consumes free APIs to get advice and translated that advice.
 
-<div style="display: flex; justify-content: center; allign-itens: center;">
-    <img src="/assets/img/example.jpeg" style=" height: 400px">
+<div style="display: flex;">
+    <img src="/assets/img/example.jpeg">
 </div>
 
 ## Installation
