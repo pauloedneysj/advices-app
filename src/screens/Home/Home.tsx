@@ -1,7 +1,7 @@
-import { useEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
 import { useQuery, useQueryClient } from "@tanstack/react-query";
 import { getAdvice, getTranslatedAdvice } from "../../api";
-import { Container, Box, Text, Button } from "./styles";
+import { Box, Text, Container, Button } from "./styles";
 
 export default function Home() {
   const [advice, setAdvice] = useState("");
@@ -28,11 +28,7 @@ export default function Home() {
           {isLoading || queryClient.isFetching() ? "Carregando..." : advice}
         </Text>
       </Box>
-      <Button
-        title="Buscar"
-        touchSoundDisabled={false}
-        onPress={() => setIsInvalidate(true)}
-      />
+      <Button title={"Buscar"} onPress={() => setIsInvalidate(true)} />
     </Container>
   );
 }
